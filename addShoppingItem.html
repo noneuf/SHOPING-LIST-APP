@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Page Title</title>
+  </head>
+  <body>
+    <header>
+      <h1>הוספת מוצר לרכישה</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">דף הבית</a></li>
+          <li><a href="/shoppingList.html">רשימת הקניות</a></li>
+          <li><a href="#">ניהול קטגוריות</a></li>
+          <li><a href="#">ניהול עסקים</a></li>
+          <li><a href="#">דשבורד סטטיסטיקות</a></li>
+          <li><a href="#">אודות</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="" method="post">
+        <label for="title">כותרת:</label>
+        <input type="text" id="title" name="title" required />
+
+        <!-- This will be a list of items to pick from and the data will be fetch from the categories table from the shoppingApp db -->
+        <label for="category">קטגוריה:</label>
+        <input type="category" id="category" name="category" required />
+        <!-- this will be a list to pick from with options ad each options will be displayed with a title (ex: דחות מאוד), the options will be fetch from the urgencyOptions tabel in shoppingApp db -->
+        <label for="urgency">מידת דחיפות:</label>
+        <input type="urgency" id="urgency" name="urgency" />
+        <!-- this will be a list of the shops fecthed from the shops table from the shoppingApp db -->
+        <label for="shop">חנות לרכישה:</label>
+        <input type="shop" id="shop" name="shop" />
+        <!-- this button should take us to the page to add a shop item -->
+        <button>הוספת עסק</button>
+
+        <label for="comments">הערות:</label>
+        <input type="comments" id="comments" name="comments" />
+        <!-- this will open a calendar section to pich a date from ands ave the date to the shoppingList item in the shoppingList table in the shoppingApp db -->
+        <label for="buyingDate">תאריך לרכישה צפוייה:</label>
+        <input type="buyingDate" id="buyingDate" name="buyingDate" />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Nathan Goel</p>
+    </footer>
+  </body>
+</html>
