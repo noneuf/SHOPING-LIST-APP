@@ -9,9 +9,9 @@
       <h1>ברוכים הבאים לניהול רכישות שלכם</h1>
       <nav>
         <ul>
+          <li><a href="/">דף הבית</a></li>
           <li><a href="/shoppingList.html">רשימת הקניות</a></li>
           <li><a href="/addShoppingItem.html">הוספת מוצר לקנייה</a></li>
-          <li><a href="/manageCategories.html">ניהול קטגוריות</a></li>
           <li><a href="/manageShops.html">ניהול עסקים</a></li>
           <li><a href="#">דשבורד סטטיסטיקות</a></li>
           <li><a href="#">אודות</a></li>
@@ -21,15 +21,27 @@
 
     <main>
       <section>
-        <h2>איך זה עובד?</h2>
+        <h2>רשימת קטגוריות קיימות</h2>
+        <ol>
+          <!-- this list will be dynamic and get the category list items from the table categories from the shoppingApp db -->
+          <li>מזון</li>
+          <li>יופי ויגינה</li>
+          <li>משחקים</li>
+          <li>בגדים</li>
+          <li>שתייה</li>
+          <li>ניקיון</li>
+        </ol>
       </section>
       <section>
-        <!-- this section will get data from the select top 10 items from the shoppingHistory table from the shoppingApp db -->
-        <h2>מוצרים הכי נרכשים</h2>
-      </section>
-      <section>
-        <!-- this section will get data from the shoppingHistory table from the shoppingApp db -->
-        <h2>המלצה לרכישה</h2>
+        <h2>הוספת בית עסק</h2>
+        <form action="" method="post">
+          <label for="category">שם קטגוריה:</label>
+          <input type="text" id="category" name="category" required />
+
+          <label for="details">הערות:</label>
+          <input type="text" id="details" name="details" required />
+          <input type="submit" value="הוספה" />
+        </form>
       </section>
     </main>
 
