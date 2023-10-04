@@ -1,3 +1,4 @@
+/* type selectors */
 li {
   list-style: none; /* removes the bullet before every list item */
 }
@@ -7,5 +8,6 @@ a {
 }
 
 a:hover {
+  /* a example of a pseudo class */
   text-decoration: underline;
 }
