@@ -28,12 +28,18 @@
         <!-- This will be a list of items to pick from and the data will be fetch from the categories table from the shoppingApp db -->
         <label for="category">קטגוריה:</label>
         <input type="category" id="category" name="category" required />
-        <!-- this will be a list to pick from with options ad each options will be displayed with a title (ex: דחות מאוד), the options will be fetch from the urgencyOptions tabel in shoppingApp db -->
+        <!-- this will be a list to pick from with options ad each options will be displayed with a title (ex: דחוף מאוד), the options will be fetch from the urgencyOptions tabel in shoppingApp db -->
         <label for="urgency">מידת דחיפות:</label>
         <input type="urgency" id="urgency" name="urgency" />
         <!-- this will be a list of the shops fecthed from the shops table from the shoppingApp db -->
         <label for="shop">חנות לרכישה:</label>
-        <input type="shop" id="shop" name="shop" />
+        <!-- <input type="shop" id="shop" name="shop" /> -->
+        <select id="shop" name="shop">
+          <option value="רמי לוי">רמי לוי</option>
+          <option value="היפר כהן">היפר כהן</option>
+          <option value="שופרסל">שופרסל</option>
+          <option value="סופרפארם">סופרפארם</option>
+        </select>
         <!-- this button should take us to the page to add a shop item -->
         <button>הוספת עסק</button>
 
